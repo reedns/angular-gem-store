@@ -1,0 +1,23 @@
+{
+  "name": "angular-gem-store",
+  "version": "0.0.1",
+  "homepage": "https://github.com/reedns/angular-gem-store",
+  "authors": [
+    "Reed Nelson-Saunders <reedns@hotmail.com>"
+  ],
+  "description": "Gem store",
+  "main": "app.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.0"
+    "bootstrap": "*"
+  }
+}
