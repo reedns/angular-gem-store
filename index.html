@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app='store'>
+<head>
+  <title>Gem Store</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+ <body class="container" ng-controller="StoreController as store">
+  <div ng-repeat='product in store.products'>
+    <div class="product row" ng-hide='store.product.soldOut'>
+      <h3>
+        {{store.product.name}}
+        <em class="pull-right">{{store.product.price | currency}}</em>
+      </h3>
+      <button ng-show='store.product.canPurchase'>Add to Cart</button>
+    </div>
+  </div>
+  <script type="text/javascript" src='angular.min.js'></script>
+  <script type="text/javascript" src='app.js'></script>
+</body>
+</html>
